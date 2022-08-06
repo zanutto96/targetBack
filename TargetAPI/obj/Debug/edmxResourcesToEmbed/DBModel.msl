@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="targetModelDBStoreContainer" CdmEntityContainer="targetEntitiesDB">
+    <EntitySetMapping Name="Heroes">
+      <EntityTypeMapping TypeName="targetModelDB.Hero">
+        <MappingFragment StoreEntitySet="Hero">
+          <ScalarProperty Name="universe" ColumnName="universe" />
+          <ScalarProperty Name="id_hero" ColumnName="id_hero" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="realName" ColumnName="realName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
